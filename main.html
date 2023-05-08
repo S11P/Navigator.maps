@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigator.maps</title>
+    <link rel="icon" type="image/x-icon" href="image/icon.ico" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <p id="heading">EXPLORE IN</p>
+    <p id="heading-main">Navigator.maps</p>
+
+    <form id="search-form">
+      <input id="searchbar" type="text" placeholder="Search your Location" />
+      <button id="search-button" onclick="search()">
+        <i class="fa fa-search"></i>
+      </button>
+    </form>
+
+    <div class="container">
+      <hr id="item1" size="5px" color="black" width="40%" />
+      <p id="item2">OR</p>
+      <hr id="item3" size="5px" color="black" width="40%" />
+    </div>
+    <p id="text">choose your current location:</p>
+    <div id="button-container">
+      <button type="submit" id="location-btn">
+        <i class="fa fa-map-marker"></i>&nbsp;Current Location
+      </button>
+      <div class="loc-container">
+        <p id="status"></p>
+        <a id="map-link"></a>
+      </div>
+    </div>
+
+    <div class="about_container">
+      <h1 class="about_heading">About</h1>
+      <div class="about_container2">
+        <p class="about_content">
+          Navigator.maps is a website created using HTML, CSS, and Javascript.
+          <br />
+          It is used to get the user's real-time location and show its location
+          on a map. It uses <b>Geolocation API</b> to fetch the location by
+          taking permission from the user to access the location and then giving
+          the location coordinates to the user. <br />
+          Users can also search for any place in the given search box, this will
+          redirect the user to the map page showing the location of the searched
+          place by the user.
+        </p>
+        <div id="image_container">
+          <div id="liquid_image"></div>
+          <img
+            class="about_image"
+            src="image/about3.png"
+            alt="about image"
+            height="100%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="contact_dev">
+      <h1 class="contact_heading hover_effect">Developer Information:</h1>
+      <div id="contact_info">
+        <div>Shubham Prajapati</div>
+        <div><b>&nbsp;&nbsp;|&nbsp;&nbsp;</b></div>
+        <div>
+          Email :
+          <a href="mailto: shubhamsps135@gmail.com" style="text-decoration: none; color: white">shubhamsps135@gmail.com</a>
+        </div>
+        
+      </div>
+      <div id="contact_info" style="margin-top: -0.5%;">
+        <div>Harshvardhan Soni</div>
+        <div><b>&nbsp;&nbsp;|&nbsp;&nbsp;</b></div>
+        <div>
+          Email :
+          <a href="mailto: Harshvardhansonihv@gmail.com" style="text-decoration: none; color: white">Harshvardhansonihv@gmail.com</a>
+        </div>
+      </div>
+      <div id="contact_follow">
+        <div>Follow :&nbsp;&nbsp;</div>
+        <div>
+          <a href="https://www.linkedin.com/in/shubham-sp11/"
+            ><img src="image/logo (2).png" width="5%"
+          /></a>
+        </div>
+        <div style="margin-left: -32%">LinkedIn</div>
+
+        <div><b>&nbsp;&nbsp;|&nbsp;&nbsp;</b></div>
+
+        <div>
+          <a href="https://www.instagram.com/shubhamprajapati_11/"
+            ><img src="image/logo (3).png" width="9%"
+          /></a>
+        </div>
+        <div style="margin-left: -20%">Instagram</div>
+
+        <div><b>&nbsp;&nbsp;|&nbsp;&nbsp;</b></div>
+
+        <div>
+          <a href="https://www.facebook.com/profile.php?id=100075506959120"
+            ><img src="image/logo (1).png" width="6%"
+          /></a>
+        </div>
+        <div style="margin-left: -27.5%">Facebook</div>
+
+        <div id="mylogo_contact">
+          <a href="#top" style="text-decoration: none; color: white"
+            >Navigator.maps</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script_main.js"></script>
+</html>

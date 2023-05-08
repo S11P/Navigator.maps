@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create account</title>
+    <link rel="icon" type="image/x-icon" href="image/icon.ico" />
+    <link rel="stylesheet" type="text/css" href="createaccount.css" />
+  </head>
+  <body id="body-element" style="background-image: url(image/mesh.png)">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <div class="container">
+      <form id="form" action="index.html">
+        <div id="mainhead-container">
+          <h1 id="main-heading">Navigator.maps</h1>
+        </div>
+        <h1 id="heading">Create Account</h1>
+
+        <div id="name_container">
+          <div>
+            <label class="labels">First Name</label>
+            <input
+              class="inputs_name"
+              type="text"
+              id="first"
+              placeholder="Enter First Name"
+            />
+          </div>
+          <div style="margin-left: 10%">
+            <label class="labels">Last Name</label>
+            <input
+              class="inputs_name"
+              type="text"
+              id="last"
+              placeholder="Enter Last Name"
+            />
+          </div>
+        </div>
+        <div id="li-container">
+          <label class="labels" for="username">Set Username</label>
+          <input
+            class="inputs"
+            type="text"
+            id="username"
+            placeholder="Enter Username"
+          />
+
+          <label style="margin-top: 3%" class="labels" for="password"
+            >Set Password</label
+          >
+          <input
+            class="inputs"
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+          />
+        </div>
+
+        <div id="buttons">
+          <input
+            id="submit-btn"
+            type="submit"
+            value="Submit"
+            onclick="submit_handler()"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script_main.js"></script>
+</html>

@@ -1,0 +1,361 @@
+body {
+    background-image: url(image/image.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#heading {
+    color: black;
+    font-family: SF Pro;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 15px;
+    padding-top: 6%;
+    font-weight: 300;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#heading-main {
+    margin-top: -15px;
+    color: black;
+    font-family: Samsung Sharp Sans;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 3px;
+    animation: fadeIn 2s;
+    background: linear-gradient(to right, #f32170, #0037ff, #ff0099, #0073ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+#search-form {
+    display: flex;
+    align-items: center;
+    background: rgb(1, 1, 197);
+    padding: 6px;
+    border-radius: 50px;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    transition: transform .2s;
+}
+
+#search-form:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+#searchbar {
+    background: #f6f2f2;
+    font-family: SF Pro;
+    font-weight: 550;
+    font-size: 20px;
+    border: 50px;
+    border-radius: 50px;
+    background-color: rgb(250, 250, 250);
+    flex: 1;
+    padding: 10px;
+    margin-right: 15px;
+    padding-left: 17px;
+    margin-top: -0.5px;
+
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+#search-button {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    color: blacksmoke;
+    cursor: pointer;
+    padding-right: 18px;
+    padding-bottom: 4px;
+}
+
+button:hover {
+    color: #333333;
+}
+
+.fa-search {
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+#item1 {
+    margin-top: 6.3%;
+    margin-right: -250px;
+    border-radius: 0 50px 50px 0;
+}
+
+#item2 {
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+    flex: 1;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: Samsung Sharp Sans;
+    margin-bottom: 10px;
+}
+
+#item3 {
+    margin-top: 6.3%;
+    margin-left: -250px;
+    border-radius: 50px 0 0 50px;
+}
+
+#text {
+    color: black;
+    margin-top: 2%;
+    text-align: center;
+    font-family: Product Sans;
+    font-weight: 900;
+    /* letter-spacing: 2px; */
+    font-size: 25px;
+    margin-bottom: -1%;
+}
+
+#button-container {
+    margin: auto;
+    text-align: center;
+    /* border: 7px solid red; */
+    width: 90%;
+    height: 50px;
+    padding-top: 50px;
+}
+
+#location-btn {
+    font-size: 30px;
+    font-family: Product Sans;
+    font-weight: bold;
+    background-color: rgb(1, 1, 197);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px 10px 20px;
+}
+
+#location-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(1, 1, 197);
+    border: 2px solid;
+    border-radius: 50px;
+    border-color: rgb(1, 1, 197);
+}
+
+
+.fa-map-marker {
+    background: #ffffff;
+    color: rgb(1, 1, 197);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* text-align: left; */
+    line-height: 100px;
+    /* vertical-align: middle; */
+    padding: 10px 10px 10px 10px;
+    margin-left: -8px;
+}
+
+.fa-map-marker:hover {
+    background: rgb(1, 1, 197);
+    color: white;
+
+}
+
+.loc-container {
+    margin-top: 2%;
+}
+
+#status {
+    font-family: SF Pro;
+    font-weight: bold;
+    color: red;
+}
+
+#map-link {
+    font-family: SF Pro;
+    font-weight: bold;
+
+}
+
+.about_container {
+    background-size: auto;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: -0.52%;
+    margin-right: -0.5%;
+}
+
+.about_heading {
+    padding-top: 2%;
+    padding-left: 3%;
+    font-size: 50px;
+    font-family: Product Sans;
+}
+
+.about_container2 {
+    display: flex;
+    margin-top: -2%;
+}
+
+.about_content {
+    font-size: 25px;
+    width: 50%;
+    font-family: SF Pro;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding-left: 3%;
+}
+
+#image_container {
+    position: relative;
+    width: auto;
+    left: 21%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#liquid_image {
+    position: absolute;
+    background: linear-gradient(45deg, #00d9ff 0%, #001aff 50%, rgb(34, 187, 195) 75%, rgb(255, 255, 0) 100%);
+    width: 422px;
+    opacity: 0.2;
+    height: 310px;
+    top: -5%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% / 45% 20% 78% 90%;
+    animation: liquid 5s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes liquid {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background-size: 100% 100%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        background-size: 300% 150%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        background-size: 100% 100%;
+    }
+}
+
+.about_image {
+    position: absolute;
+    z-index: 2;
+}
+
+.contact_dev {
+    background-color: rgb(0, 0, 62);
+    margin-left: -0.51%;
+    margin-bottom: -1%;
+    margin-right: -0.5%;
+}
+
+.contact_heading {
+    color: white;
+    margin-left: 2%;
+    padding-top: 0.5%;
+    font-family: SF Pro;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.hover_effect {
+    display: inline-block;
+    position: relative;
+}
+
+.hover_effect::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+.hover_effect:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#contact_info {
+    color: white;
+    display: flex;
+    margin-left: 2%;
+    padding-bottom: 1%;
+    font-size: 25px;
+    font-family: SF Pro;
+    font-weight: 100;
+}
+
+#mylogo_contact {
+    font-family: Samsung Sharp Sans;
+    font-size: 29px;
+    margin-left: 49%;
+}
+
+#contact_follow {
+    font-family: SF Pro;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    font-weight: 100;
+    margin-left: 2%;
+    padding-bottom: 1%;
+}
